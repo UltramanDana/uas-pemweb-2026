@@ -1,0 +1,10 @@
+@extends('layouts.app')
+@section('title', 'Home Page')
+@section('content')
+@include('partials.footer')
+@include('partials.header')
+@include('partials.hero')
+@include('partials.product')
+@include('partials.script')
+@include('partials.searchmodel')
+@endsection

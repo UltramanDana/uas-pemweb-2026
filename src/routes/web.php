@@ -19,5 +19,18 @@ Livewire::setScriptRoute(function ($handle) {
 / END
 */
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('pages.home');
+})->name('home');
+
+Route::get('/categories', function () {
+    return view('pages.categories'); 
+})->name('categories');
+
+
+Route::get('/anime-details', function () {
+    return view('pages.anime-details');
+})->name('anime.details');
+
+Route::get('/login', function () {
+    return view('pages.login');
+})->name('login');
